@@ -76,8 +76,9 @@ print lb + '''Below we use the 'glob' module
 
 print os.getcwd()
 filelist = glob.glob("%s%s*.py" % (os.getcwd(),os.sep))
+#os.sep uses the correct seperators / or \ according to your OS
 
-[prints(i) for i in filelist]
+for i in filelist: print i
 
 print lb + "But if we want just the names, we use \"os.path.basename()\""
 [prints(os.path.basename(i)) for i in filelist]

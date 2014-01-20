@@ -10,7 +10,7 @@ __author__ =  'Bernie Hogan'
 __version__=  '1.1'
 
 # Files are opened as objects that we can interact with. 
-# The method asks for a filename and whether its read, write or append
+# The method asks for a filename and whether its read, write or append - THE STATE
 
 fileout = open("newfile.txt",'w')
 
@@ -18,7 +18,7 @@ outstr = "Hello, computer. I am being written to you as we speak.\n"
 
 fileout.write(outstr)
 
-# fileout.flush()
+# fileout.flush() - you can flush the file i.e. tell the PC to write everything to the HDD in sequence w/out buffering and stop doing everything else
 
 fileout.close()
 

@@ -38,6 +38,7 @@ print LB
 print "List comps can also employ if statement after the 'for' part."
 numList1 = [1,1,2,3,5,8,12,21]
 print numList1
+# THIS IS THE NOTATION FOR COMPREHENSION
 numListFiltered = [i for i in numList1 if i < 10]
 print numListFiltered
 
@@ -81,6 +82,7 @@ numList1 = [1,1,2,3,5,8,12,21]
 print LB
 print "How about this time?"
 for i in range(len(numList1)):
+	#If i is less than the length of numlist -1
 	if i < (len(numList1) - 1):
 		var1 = numList1[i]
 		var2 = numList1[i+1]
@@ -122,6 +124,7 @@ print LB
 print "When you 'print' an object, you're turning it into a string."
 print "We can do this manually using str() method."
 objectStr = str(objectList2)
+print objectStr
 # 
 # print objectStr
 # print objectStr[3:]

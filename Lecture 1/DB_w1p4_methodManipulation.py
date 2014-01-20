@@ -11,12 +11,13 @@ __author__ =  'Bernie Hogan'
 __version__=  '1.0'
 
 
-#1. Calling a method
-shoutOut("Bernie!")
+#1. Calling a method - define the method before you call it
+
 
 def shoutOut (str1):
 	print "Yo! " + str1
 	
+shoutOut = ("Bernie!")
 
 #2. Dealing with bad input (2 errors here)
 def shoutOut(str1="Bernie"):
@@ -28,9 +29,11 @@ def shoutOut(str1="Bernie"):
 shoutOut(42)
 
 #3. Input / Output
+# return tempVar needed under tempVar = str(str1) - make sure its returning something if you're asking it to return something
 def shoutOut(str1="Bernie"):
 	try: 
 		tempVar = str(str1)
+		return tempVar
 	except: 
 		return 
 		

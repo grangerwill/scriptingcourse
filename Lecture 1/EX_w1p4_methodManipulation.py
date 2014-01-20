@@ -6,7 +6,7 @@ Example 4: Method Manipulation
 Python is an "object-oriented" language. 
 This means that we work with objects, with their own properties and methods.
 
-A method is a systematic technique for acting upon an object. 
+A METHOD is a systematic technique for acting upon an OBJECT. 
 Methods can exist by themselves or inside of a "class".
 We will discuss classes and objects in a later tutorial.  
 """
@@ -33,6 +33,10 @@ print "Here's the output from a basic method:"
 #### METHOD 1 ####
  		
 x = None 
+
+# green is the name of the method
+# blue is the system word
+# orange are arguments - the things we send to the method
 
 def concatWithCheeze(str1,str2):
 	return str1 + " cheeze " + str2
@@ -63,7 +67,7 @@ print "To note: You have to define a method before implementing it."
 print "Also, methods can have defaults."
 print "Instead of (strvar), we would type (strvar \"yes\")"
 
-#### METHOD 3: Wtih Exception and Defaults ####
+#### METHOD 3: Wtih Exception and Defaults #### This means that Python knows what to do if we don't put anything in, or we change str to an integer by mistake
 def concatWithCheeze(str1="Chilli", str2="doodles"):
 	x = ""
 	try: 

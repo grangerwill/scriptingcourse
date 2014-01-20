@@ -14,7 +14,7 @@ import string
 
 # Example string manipulation 
 
-# Printing a string: 
+# Printing a string: ***i.e. a STRING of CHARACTER*** (as opposed to integers - int, intvar)
 print "Hello \"Terra\"!!!"
 
 # Special whitespace characters
@@ -25,16 +25,17 @@ print "When you type \\n in code it turns into a new line:"
 print "\n^ up here!"
 
 # Print a string inside a variable
-strvar = "planetfe;hoiagrho'iaegrlhiaegr"
+strvar = "planet"
 
-print "\nHello %s !!!" % strvar
+print "\nHello %s !!!" % (strvar)
 
+#creating a line break
 LB = "\n-----------------------"
 print LB
 # Pringing two strings at the same time
 print "Multiple strings can be printed at once."
 strvar1 = "Cheezburger"
-strvar2 = "Fries"
+strvar2 = "Friends"
 
 print "\nIn sequence:"
 print strvar1,strvar2
@@ -42,8 +43,9 @@ print strvar1,strvar2
 print "\nConcatenated:"
 print strvar1 + strvar2
 
+# %(b)s means insert the STRING variable B
 print "\nInside a third string:"
-print "I can has %(b)s and %(b)s?" % {'a':strvar1, 'b':strvar2}
+print "I can has %(a)s and %(b)s?" % {'a':strvar1, 'b':strvar2}
 
 print LB
 
@@ -77,7 +79,7 @@ print LB
 print "Lists are sequences, and accessible by index." 
 print "I can access the characters by number, starting with 0."
 
-index = 0
+index = 4
 print strvar1[index]
 print strvar1[0]
 
@@ -92,6 +94,7 @@ print wordlist
 print "Here it is joined (which adds in spaces by default):"
 print string.join(wordlist)
 
+#\t is HOW you join them - the ARGUMENT
 print "Here I've joined it with tabs"
 tabstring = string.join(wordlist,"\t")
 print tabstring

@@ -16,6 +16,8 @@ print "Lists work in sequence, and are indexed by a number"
 print "Dictionaries are indexed by keys. They are extremely useful."
 print "A list is enclosed in [], a dictionary in {}."
 
+# a and Cheez is a KEY VALUE PAIR - here there are FOUR key value pairs
+# A key value in a dict is ALWAYS A STRING. The differing use of '' and "" below is arbtitrary
 dict1 = {'a':"Cheez",'b':"Ham",'c':"Veggie",'d':"Fish"}
 print dict1
 
@@ -32,6 +34,7 @@ print
 for i in dict1.values(): 
 	print i
 
+# BIG FINAL STEP
 print
 
 for i,j in dict1.items(): 
@@ -52,6 +55,7 @@ if dict1.has_key("chicken"):
 else:
 	print "Someone looking for a Hamburger?"
 
+# use the 'if' function in case your dict does not have a particular key 
 if dict1.has_key('a'):
 	print "I luv " + dict1["a"] + "burgers."
 	
